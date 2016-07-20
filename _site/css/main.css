@@ -148,6 +148,15 @@ html, body {
 /**
  * Header
  */
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  width: 2em; }
+
+a:hover [class*="zocial-"]:before {
+  color: #707070; }
+
 .header {
   padding: 50px 20px 40px;
   background-color: #6d819c;
@@ -220,11 +229,12 @@ li {
 
 .social-links li {
   display: inline;
-  padding-right: 10px;
-  line-height: 0; }
+  padding-right: 0px;
+  line-height: 0;
+  color: #828282; }
 
 .social-links a {
-  color: #959BA6; }
+  color: #fdfdfd; }
 
 .social-links a:active {
   opacity: 0.6; }
